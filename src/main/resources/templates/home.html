@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/home.js}">
+
+    </script>
+    <title>Zadanie</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Wybierz kolumnę</h1>
+<form action="#" id="selectColumn">
+    <p><select>
+        <option value="kolumna1">kolumna1</option>
+        <option value="kolumna2">kolumna2</option>
+        <option value="kolumna3">kolumna3</option>
+        <option value="kolumna4">kolumna4</option>
+    </select></p>
+    <p><input type="button" value="Submit" onclick="searchAjax()"/>
+</form>
+<h1>Unikalne wartości</h1>
+<table id="unique"></table>
+<h1>Zduplikowane wartości</h1>
+<table id="duplicated"></table>
+
+
+</body>
+</html>
